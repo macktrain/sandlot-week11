@@ -10,7 +10,7 @@ app.use(express.json());
 //lets express know where html files are ... good habit.
 app.use(express.static('public'));
 
-//require('./routes/apiRoutes')(app);
+require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
 // Starts our server
